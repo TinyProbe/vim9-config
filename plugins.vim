@@ -28,7 +28,7 @@ call plug#begin()
 
     " indentline
 
-    " statusline / tabline
+    " statusline/tabline
     Plug 'itchyny/lightline.vim'
 
     " colorscheme
@@ -52,7 +52,7 @@ let g:auto_save_silent = 1
 
 " indentline
 
-" statusline / tabline
+" statusline/tabline
 " let g:lightline = { 'colorscheme': 'torte' }
 
 " colorscheme
