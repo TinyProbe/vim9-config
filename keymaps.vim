@@ -131,7 +131,7 @@ call Keymap("vnore", "<silent>", "<A-l>", "<cmd>Indentv<cr>")
 call Keymap("vnore", "<silent>", "<A-j>", "<Plug>MoveBlockDown")
 call Keymap("vnore", "<silent>", "<A-k>", "<Plug>MoveBlockUp")
 
-" abbreviations
+" abbrevs
 call Keymap("nnore", "<silent>", "<leader>obh", "<cmd>AbbrevBasicHtml<cr>")
 
 " convenience/inconvenience
