@@ -132,7 +132,7 @@ call Keymap("vnore", "<silent>", "<A-j>", "<Plug>MoveBlockDown")
 call Keymap("vnore", "<silent>", "<A-k>", "<Plug>MoveBlockUp")
 
 " abbrevs
-call Keymap("nnore", "<silent>", "<leader>obh", "<cmd>AbbrevBasicHtml<cr>")
+call Keymap("nnore", "<silent>", "<leader>ohb", "<cmd>AbbrevHtmlBasic<cr>")
 
 " convenience/inconvenience
 call Keymap("vnore", "<silent>", "u", "<esc>u")
