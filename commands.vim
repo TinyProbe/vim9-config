@@ -1,7 +1,11 @@
-source ~/.config/vim/abbrevs/abbrevs.vim
-
 " indent/outdent
-command! Indentn :call IndentNormal()
-command! Outdentn :call OutdentNormal()
-command! Indentv :call IndentVisual()
-command! Outdentv :call OutdentVisual()
+command IndentNormal :call IndentNormal()
+command OutdentNormal :call OutdentNormal()
+command IndentVisual :call IndentVisual()
+command OutdentVisual :call OutdentVisual()
+
+" settings
+command -nargs=1 ResizeTab :call ResizeTab(<args>)
+
+" abbrevs
+source ~/.config/vim/abbrevs/abbrevs.vim
