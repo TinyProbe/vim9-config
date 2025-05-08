@@ -677,7 +677,7 @@
 " 
 " belloff	do not ring the bell for these reasons
 "  	set belloff=
- 	set belloff=showmatch
+ 	set belloff=all
 " 
 " helplang	list of preferred languages for finding help
 "  	set hlg=ko
@@ -817,7 +817,6 @@
 " matchpairs	list of pairs that match for the "%" command
 " 	(local to buffer)
 "  	set mps=(:),{:},[:]
- 	set mps+=<:>
 " 
 " joinspaces	use two spaces after '.' when joining a line
 "  	set js	nojs
