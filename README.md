@@ -12,6 +12,7 @@ git clone https://github.com/TinyProbe/vim-config ~/.config/vim
 echo "source ~/.config/vim/init.vim" > ~/.vimrc
 ```
 
+## Description
 > The vim settings are divided into each part and written in order, so please do
 > not modify them if possible.
 > 
