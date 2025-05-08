@@ -144,10 +144,11 @@ call Keymap("vnore", "<silent>", "u", "<esc>u")
 call Keymap("vnore", "<silent>", "U", "<esc>u")
 call Keymap("nnore", "<silent>", "-", "<C-x>")
 call Keymap("nnore", "<silent>", "=", "<C-a>")
-call Keymap("nnore", "<silent>", "<C-a>", "GVgg")
+call Keymap("nnore", "<silent>", "<C-a>", "<cmd>SelectAll<cr>")
 call Keymap("nnore", "<silent>", "<C-s>", "<cmd>wa<cr>")
-call Keymap("nnore", "<silent>", "<leader>st", "<cmd>AutoSaveToggle<cr>")
+call Keymap("nnore", "<silent>", "<leader>at", "<cmd>AutoSaveToggle<cr>")
 call Keymap("nnore", "<silent>", "<leader>fe", "<cmd>NERDTreeToggle<cr>")
+call Keymap("nnore", "<silent>", "<leader>sr", "<cmd>!./run.sh<cr>")
 
 " vim-commentary customize
 call Keymap("n", "", "gc", "<nop>")

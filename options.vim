@@ -677,6 +677,7 @@
 " 
 " belloff	do not ring the bell for these reasons
 "  	set belloff=
+ 	set belloff=showmatch
 " 
 " helplang	list of preferred languages for finding help
 "  	set hlg=ko
