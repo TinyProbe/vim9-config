@@ -132,7 +132,12 @@ call Keymap("vnore", "<silent>", "<A-j>", "<Plug>MoveBlockDown")
 call Keymap("vnore", "<silent>", "<A-k>", "<Plug>MoveBlockUp")
 
 " abbrevs
+    " html
 call Keymap("nnore", "<silent>", "<leader>ohb", "<cmd>AbbrevHtmlBasic<cr>")
+    " dart
+call Keymap("nnore", "<silent>", "<leader>odb", "<cmd>AbbrevDartBasic<cr>")
+call Keymap("nnore", "<silent>", "<leader>odl", "<cmd>AbbrevDartStateless<cr>")
+call Keymap("nnore", "<silent>", "<leader>odf", "<cmd>AbbrevDartStateful<cr>")
 
 " convenience/inconvenience
 call Keymap("vnore", "<silent>", "u", "<esc>u")
