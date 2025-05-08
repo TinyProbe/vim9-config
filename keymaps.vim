@@ -131,13 +131,13 @@ call Keymap("vnore", "<silent>", "<A-l>", "<cmd>Indentv<cr>")
 call Keymap("vnore", "<silent>", "<A-j>", "<Plug>MoveBlockDown")
 call Keymap("vnore", "<silent>", "<A-k>", "<Plug>MoveBlockUp")
 
-" abbrevs
+" abbrevs(p[aste])
     " html
-call Keymap("nnore", "<silent>", "<leader>ohb", "<cmd>AbbrevHtmlBasic<cr>")
+call Keymap("nnore", "<silent>", "<leader>phb", "<cmd>AbbrevHtmlBasic<cr>")
     " dart
-call Keymap("nnore", "<silent>", "<leader>odb", "<cmd>AbbrevDartBasic<cr>")
-call Keymap("nnore", "<silent>", "<leader>odl", "<cmd>AbbrevDartStateless<cr>")
-call Keymap("nnore", "<silent>", "<leader>odf", "<cmd>AbbrevDartStateful<cr>")
+call Keymap("nnore", "<silent>", "<leader>pdb", "<cmd>AbbrevDartBasic<cr>")
+call Keymap("nnore", "<silent>", "<leader>pdf", "<cmd>AbbrevDartStateful<cr>")
+call Keymap("nnore", "<silent>", "<leader>pdl", "<cmd>AbbrevDartStateless<cr>")
 
 " convenience/inconvenience
 call Keymap("vnore", "<silent>", "u", "<esc>u")
