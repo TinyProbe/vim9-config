@@ -1,12 +1,14 @@
-" settings
-command -nargs=1 ResizeTab :call ResizeTab(<args>)
+vim9script
 
-" functions
-command SelectAll :call SelectAll()
-command IndentNormal :call IndentNormal()
-command OutdentNormal :call OutdentNormal()
-command IndentVisual :call IndentVisual()
-command OutdentVisual :call OutdentVisual()
+# settings
+command -nargs=1 UsrCmdResizeTab :call g:ResizeTab(<args>)
 
-" abbrevs
+# functions
+command UsrCmdSelectAll :call g:SelectAll()
+command UsrCmdIndentNormal :call g:IndentNormal()
+command UsrCmdOutdentNormal :call g:OutdentNormal()
+command UsrCmdIndentVisual :call g:IndentVisual()
+command UsrCmdOutdentVisual :call g:OutdentVisual()
+
+# abbrevs
 source ~/.config/vim/abbrevs/abbrevs.vim

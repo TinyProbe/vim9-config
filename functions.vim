@@ -1,38 +1,39 @@
-" key mapping
-function Keymap(mode, opt, key, act)
-    execute a:mode .. "map " .. a:opt .. " " .. a:key .. " " .. a:act
-endfunction
+vim9script
 
-" resize tabsize group
-function ResizeTab(size)
-    let l:size = str2nr(a:size)
-    execute "set tabstop=" .. l:size
-    execute "set shiftwidth=" .. l:size
-    execute "set softtabstop=" .. l:size
-endfunction
+# key mapping
+def g:Keymap(mode: string, opt: string, key: string, act: string): void
+    execute mode .. "map " .. opt .. " " .. key .. " " .. act
+enddef
 
-" select all
-function SelectAll()
+# resize tabgroup
+def g:ResizeTab(size: number): void
+    execute "setlocal tabstop=" .. size
+    execute "setlocal shiftwidth=" .. size
+    execute "setlocal softtabstop=" .. size
+enddef
+
+# select all
+def g:SelectAll(): void
     call cursor(getpos('$')[1], 1)
     normal! V
     call cursor(1, 1)
-endfunction
+enddef
 
-" indent/outdent
-function IndentNormal()
+# indent/outdent
+def g:IndentNormal(): void
     normal! >>
-endfunction
+enddef
 
-function OutdentNormal()
+def g:OutdentNormal(): void
     normal! <<
-endfunction
+enddef
 
-function IndentVisual()
-    call IndentNormal()
+def g:IndentVisual(): void
+    g:IndentNormal()
     normal! gv
-endfunction
+enddef
 
-function OutdentVisual()
-    call OutdentNormal()
+def g:OutdentVisual(): void
+    g:OutdentNormal()
     normal! gv
-endfunction
+enddef

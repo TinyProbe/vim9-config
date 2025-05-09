@@ -13,9 +13,6 @@ echo "source ~/.config/vim/init.vim" > ~/.vimrc
 ```
 
 ## Description
-> The vim settings are divided into each part and written in order, so please do
-> not modify them if possible.
-> 
 > options.vim: Almost all settings are written, and only the default values that
 > have been modified are uncommented.
 > 

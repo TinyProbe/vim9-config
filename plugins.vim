@@ -1,63 +1,65 @@
+vim9script
+
 call plug#begin()
-    " file explorer
+    # file explorer
     Plug 'preservim/nerdtree'
 
-    " commenter
+    # commenter
     Plug 'tpope/vim-commentary'
     
-    " scroll bar
+    # scroll bar
     Plug 'AndrewRadev/popup_scrollbar.vim'
 
-    " surround parentheses
+    # surround parentheses
     Plug 'tpope/vim-surround'
 
-    " line move
+    # line move
     Plug 'matze/vim-move'                                
 
-    " multi cursor
+    # multi cursor
     Plug 'mg979/vim-visual-multi', { 'branch': 'master' }
 
-    " auto pairs
-    " Plug 'LunarWatcher/auto-pairs'
+    # auto pairs
+    # Plug 'LunarWatcher/auto-pairs'
 
-    " auto save
+    # auto save
     Plug '907th/vim-auto-save'
 
-    " include devicons
+    # include devicons
     Plug 'ryanoasis/vim-devicons'
 
-    " indentline
+    # indentline
 
-    " statusline/tabline
+    # statusline/tabline
     Plug 'itchyny/lightline.vim'
 
-    " colorscheme
-    " Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+    # colorscheme
+    # Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
-    " syntax highlighting
+    # syntax highlighting
     Plug 'sheerun/vim-polyglot'
 call plug#end()
 
-" scroll bar
-let g:popup_scrollbar_auto = 1
-let g:popup_scrollbar_shape = { 'head': '', 'body': '█', 'tail': '' }
+# scroll bar
+g:popup_scrollbar_auto = v:true
+g:popup_scrollbar_shape = { 'head': '', 'body': '█', 'tail': '' }
 
-" line move
-let g:move_map_keys = 0
-let g:move_auto_indent = 0
+# line move
+g:move_map_keys = v:false
+g:move_auto_indent = v:false
 
-" auto save
-let g:auto_save = 1
-let g:auto_save_silent = 1
+# auto save
+g:auto_save = v:true
+g:auto_save_silent = v:true
 
-" indentline
+# indentline
 
-" statusline/tabline
-" let g:lightline = { 'colorscheme': 'torte' }
+# statusline/tabline
+# let g:lightline = { 'colorscheme': 'torte' }
 
-" colorscheme
+# colorscheme
 colorscheme torte
 
-" syntax highlighting
+# syntax highlighting
 syntax on
 filetype plugin indent on

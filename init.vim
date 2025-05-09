@@ -1,3 +1,5 @@
+vim9script
+
 source ~/.config/vim/options.vim
 source ~/.config/vim/functions.vim
 source ~/.config/vim/commands.vim
