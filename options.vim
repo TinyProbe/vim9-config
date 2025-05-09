@@ -892,6 +892,7 @@ vim9script
 # cinwords	list of words that cause more C-indent
 # 	(local to buffer)
 #  	set cinw=if,else,while,do,for,switch
+ 	set cinw+=loop
 
 # cinscopedecls	list of scope declaration names used by cino-g
 # 	(local to buffer)
