@@ -55,7 +55,7 @@ g:auto_save_silent = v:true
 # indentline
 
 # statusline/tabline
-# let g:lightline = { 'colorscheme': 'torte' }
+# g:lightline = { 'colorscheme': 'torte' }
 
 # colorscheme
 colorscheme torte

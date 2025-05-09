@@ -29,7 +29,6 @@ var filetype_info = {
 
 def BufDefault(): void
     var extension = &filetype
-    echo extension
     if !has_key(filetype_info, extension)
         extension = "default"
     endif
