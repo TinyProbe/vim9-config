@@ -20,7 +20,6 @@ call plug#begin()
     Plug 'mg979/vim-visual-multi', { 'branch': 'master' }
 
     # auto pairs
-    # Plug 'LunarWatcher/auto-pairs'
 
     # auto save
     Plug '907th/vim-auto-save'
@@ -34,7 +33,6 @@ call plug#begin()
     Plug 'itchyny/lightline.vim'
 
     # colorscheme
-    # Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
     # syntax highlighting
     Plug 'sheerun/vim-polyglot'
