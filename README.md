@@ -29,11 +29,11 @@ echo "source ~/.config/vim/init.vim" > ~/.vimrc
 > abbrevs/abbrevs.vim: Contains commands to load code snippets. You can add or
 > modify other commands.
 > 
+> autocmds.vim: You can register commands to be automatically called when a
+> specific event occurs. You can add or modify other contents.
+> 
 > plugins.vim: You can add or modify plugins. (After modifying, restart vim and
 > run the PlugInstall and PlugClean commands.)
 > 
 > keymaps.vim: Contains a wide range of shortcut settings according to personal
 > preferences. You can add or modify other shortcuts.
-> 
-> autocmds.vim: You can register commands to be automatically called when a
-> specific event occurs. You can add or modify other contents.
