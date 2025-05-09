@@ -812,7 +812,7 @@
 " 
 " matchtime	tenth of a second to show a match for 'showmatch'
 "  	set mat=5
- 	set mat=2
+ 	set mat=3
 " 
 " matchpairs	list of pairs that match for the "%" command
 " 	(local to buffer)
