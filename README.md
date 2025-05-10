@@ -10,6 +10,8 @@ if [ -d "~/.config/vim" ]; then
 fi
 git clone https://github.com/TinyProbe/vim-config ~/.config/vim
 echo "source ~/.config/vim/init.vim" > ~/.vimrc
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+             https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 ## Description
