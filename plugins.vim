@@ -25,7 +25,7 @@ call plug#begin()
     Plug '907th/vim-auto-save'
 
     # include devicons
-    Plug 'ryanoasis/vim-devicons'
+    # Plug 'ryanoasis/vim-devicons' # Forbidden: low performance
 
     # indentline
 
@@ -35,7 +35,7 @@ call plug#begin()
     # colorscheme
 
     # syntax highlighting
-    Plug 'sheerun/vim-polyglot'
+    # Plug 'sheerun/vim-polyglot' # Forbidden: low performance
 call plug#end()
 
 # scroll bar
