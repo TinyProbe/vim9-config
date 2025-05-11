@@ -19,21 +19,40 @@ def g:SelectAll(): void
     call cursor(1, 1)
 enddef
 
-# indent/outdent
-def g:IndentNormal(): void
+# move line
+    # line(block) indent/outdent
+def g:LineIndent(): void
     normal! >>
 enddef
 
-def g:OutdentNormal(): void
+def g:LineOutdent(): void
     normal! <<
 enddef
 
-def g:IndentVisual(): void
-    g:IndentNormal()
+def g:BlockIndent(): void
+    g:LineIndent()
     normal! gv
 enddef
 
-def g:OutdentVisual(): void
-    g:OutdentNormal()
+def g:BlockOutdent(): void
+    g:LineOutdent()
+    normal! gv
+enddef
+    # line(block) up/down
+def g:LineUp()
+    execute ":move .-2"
+enddef
+
+def g:LineDown()
+    execute ":move .+1"
+enddef
+
+def g:BlockUp()
+    execute ":'<,'>move -2"
+    normal! gv
+enddef
+
+def g:BlockDown()
+    execute ":'<,'>move '>+1"
     normal! gv
 enddef
