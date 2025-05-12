@@ -40,19 +40,29 @@ def g:BlockOutdent(): void
 enddef
     # line(block) up/down
 def g:LineUp()
-    execute ":move .-2"
+    if line(".") != 1
+        execute ":move .-2"
+    endif
 enddef
 
 def g:LineDown()
-    execute ":move .+1"
+    if line(".") != line("$")
+        execute ":move .+1"
+    endif
 enddef
 
 def g:BlockUp()
-    execute ":'<,'>move -2"
+    normal! :
+    if line("'<") != 1
+        execute ":'<,'>move -2"
+    endif
     normal! gv
 enddef
 
 def g:BlockDown()
-    execute ":'<,'>move '>+1"
+    normal! :
+    if line("'>") != line("$")
+        execute ":'<,'>move '>+1"
+    endif
     normal! gv
 enddef

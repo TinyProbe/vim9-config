@@ -129,8 +129,8 @@ g:Keymap("nnore", "<silent>", "<A-j>", "<cmd>UsrCmdLineDown<cr>")
 g:Keymap("nnore", "<silent>", "<A-k>", "<cmd>UsrCmdLineUp<cr>")
 g:Keymap("vnore", "<silent>", "<A-h>", "<cmd>UsrCmdBlockOutdent<cr>")
 g:Keymap("vnore", "<silent>", "<A-l>", "<cmd>UsrCmdBlockIndent<cr>")
-g:Keymap("vnore", "<silent>", "<A-j>", ":move '>+1<cr>gv")
-g:Keymap("vnore", "<silent>", "<A-k>", ":move -2<cr>gv")
+g:Keymap("vnore", "<silent>", "<A-j>", "<cmd>UsrCmdBlockDown<cr>")
+g:Keymap("vnore", "<silent>", "<A-k>", "<cmd>UsrCmdBlockUp<cr>")
 
 # abbrevs(p[aste])
     # html
