@@ -13,9 +13,6 @@ call plug#begin()
     # surround parentheses
     Plug 'tpope/vim-surround'
 
-    # line move
-    Plug 'matze/vim-move'                                
-
     # multi cursor
     Plug 'mg979/vim-visual-multi', { 'branch': 'master' }
 
@@ -24,8 +21,8 @@ call plug#begin()
     # auto save
     Plug '907th/vim-auto-save'
 
-    # include devicons
-    # Plug 'ryanoasis/vim-devicons' # Forbidden: low performance
+    # devicons
+    Plug 'ryanoasis/vim-devicons'
 
     # indentline
 
@@ -38,21 +35,47 @@ call plug#begin()
     # Plug 'sheerun/vim-polyglot' # Forbidden: low performance
 call plug#end()
 
+# file explorer
+g:NERDTreeWinPos = "right"
+g:NERDTreeShowHidden = v:true
+
 # scroll bar
 g:popup_scrollbar_auto = v:true
 g:popup_scrollbar_shape = { 'head': '', 'body': '█', 'tail': '' }
-
-# line move
-g:move_map_keys = v:false
-g:move_auto_indent = v:false
 
 # auto save
 g:auto_save = v:true
 g:auto_save_silent = v:true
 
+# devicons
+g:webdevicons_enable = v:true
+g:webdevicons_enable_nerdtree = v:true
+g:lightline = {
+    'component_function': {
+        'filetype': 'MyFiletype',
+        'fileformat': 'MyFileformat',
+    }
+}
+
+def MyFiletype(): string
+    return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype .. ' ' .. WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+enddef
+
+def MyFileformat(): string
+    return winwidth(0) > 70 ? (&fileformat .. ' ' .. WebDevIconsGetFileFormatSymbol()) : ''
+enddef
+
 # indentline
 
 # statusline/tabline
+g:lightline.enable = {
+    'statusline': v:true,
+    'tabline': v:true,
+}
+g:lightline.separator = { 'left': '', 'right': '' }
+g:lightline.subseparator = { 'left': '', 'right': '' }
+g:lightline.tabline_separator = g:lightline.separator
+g:lightline.tabline_subseparator = g:lightline.subseparator
 # g:lightline = { 'colorscheme': 'torte' }
 
 # colorscheme
