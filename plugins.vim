@@ -41,7 +41,7 @@ g:NERDTreeShowHidden = v:true
 
 # scroll bar
 g:popup_scrollbar_auto = v:true
-g:popup_scrollbar_shape = { 'head': '', 'body': '█', 'tail': '' }
+g:popup_scrollbar_shape = { 'head': ' ', 'body': '┃', 'tail': ' ' }
 
 # auto save
 g:auto_save = v:true
@@ -51,20 +51,20 @@ g:auto_save_silent = v:true
 g:webdevicons_enable = v:true
 g:webdevicons_enable_nerdtree = v:true
 g:lightline = {
-    'component_function': {
-        'filetype': 'MyFiletype',
-        'fileformat': 'MyFileformat',
-    }
+    "component_function": {
+        "filetype": "MyFiletype",
+        "fileformat": "MyFileformat",
+    },
 }
 
 def MyFiletype(): string
     return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype ..
-        ' ' .. WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+            ' ' .. WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
 enddef
 
 def MyFileformat(): string
     return winwidth(0) > 70 ? (&fileformat ..
-        ' ' .. WebDevIconsGetFileFormatSymbol()) : ''
+            ' ' .. WebDevIconsGetFileFormatSymbol()) : ''
 enddef
 
 # indentline
