@@ -9,4 +9,4 @@ command AbbrevDartStateful :read ~/.config/vim/abbrevs/dart/stateful.dart
 command AbbrevDartStateless :read ~/.config/vim/abbrevs/dart/stateless.dart
 
 # cpp
-command AbbrevDartStateless :read ~/.config/vim/abbrevs/cpp/fastio.cpp
+command AbbrevCppFastio :read ~/.config/vim/abbrevs/cpp/fastio.cpp
