@@ -166,4 +166,3 @@ g:Keymap("x", "<silent>", "<leader>c", "<Plug>Commentary")
 g:Keymap("o", "<silent>", "<leader>c", "<Plug>Commentary")
 g:Keymap("n", "<silent>", "<leader>cc", "<Plug>CommentaryLine")
 g:Keymap("n", "<silent>", "<leader>cu", "<Plug>Commentary<Plug>Commentary")
-

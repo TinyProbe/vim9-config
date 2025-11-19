@@ -732,7 +732,7 @@ vim9script
 # textwidth	line length above which to break a line
 # 	(local to buffer)
 #  	set tw=0
- 	set tw=80
+ 	set tw=81
 
 # wrapmargin	margin from the right in which to break a line
 # 	(local to buffer)
