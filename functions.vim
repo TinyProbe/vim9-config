@@ -54,7 +54,7 @@ enddef
 def g:BlockUp()
     normal! :
     if line("'<") != 1
-        execute ":'<,'>move -2"
+    execute ":'<,'>move -2"
     endif
     normal! gv
 enddef

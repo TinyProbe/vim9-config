@@ -36,7 +36,6 @@ call plug#begin()
 call plug#end()
 
 # file explorer
-g:NERDTreeWinPos = "right"
 g:NERDTreeShowHidden = v:true
 
 # scroll bar
