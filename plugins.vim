@@ -77,11 +77,12 @@ g:lightline.separator = { 'left': '', 'right': '' }
 g:lightline.subseparator = { 'left': '', 'right': '' }
 g:lightline.tabline_separator = g:lightline.separator
 g:lightline.tabline_subseparator = g:lightline.subseparator
-# g:lightline = { 'colorscheme': 'torte' }
+# g:lightline = { 'colorscheme': 'default' }
 
 # colorscheme
-colorscheme torte
+colorscheme default
 
 # syntax highlighting
 syntax on
-filetype plugin indent on
+filetype plugin on
+filetype indent on
