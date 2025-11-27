@@ -122,7 +122,7 @@ g:Keymap("vnore", "<silent>", "<C-l>", (unit * 2) .. "zl")
 g:Keymap("vnore", "<silent>", "<C-j>", unit .. "<C-e>")
 g:Keymap("vnore", "<silent>", "<C-k>", unit .. "<C-y>")
 
-# move line(require plugin: vim-move)
+# move line
 g:Keymap("nnore", "<silent>", "<A-h>", "<cmd>UsrCmdLineOutdent<cr>")
 g:Keymap("nnore", "<silent>", "<A-l>", "<cmd>UsrCmdLineIndent<cr>")
 g:Keymap("nnore", "<silent>", "<A-j>", "<cmd>UsrCmdLineDown<cr>")
