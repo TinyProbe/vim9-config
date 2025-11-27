@@ -81,8 +81,3 @@ g:lightline.tabline_subseparator = g:lightline.subseparator
 
 # colorscheme
 colorscheme torte
-
-# syntax highlighting
-syntax on
-filetype plugin on
-filetype indent on

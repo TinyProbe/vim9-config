@@ -35,6 +35,10 @@ vim9script
 # 25. multi-byte characters
 # 26. various
 
+syntax on
+filetype plugin on
+filetype indent on
+
 #  1. important
 
 # compatible	behave very Vi compatible (not advisable)
@@ -883,20 +887,20 @@ vim9script
 # cinoptions	options for C-indenting
 # 	(local to buffer)
 #  	set cino=
- 	set cino=l1,g0,N-s,E-s,i2s,+2s,(0,U1,W2s,k2s,m1,j1,J1
+ 	set cino=>s,e0,n0,f0,{0,}0,^0,L-1,:0,=s,l1,b0,g0,hs,N-s,E-s,ps,t0,is,+s,c0,C0,/0,(s,us,U1,w0,Ws,ks,m1,M0,j1,J1,)20,*70,#0,P0 
 
 # cinkeys	keys that trigger C-indenting in Insert mode
 # 	(local to buffer)
-#  	set cink=0{,0},0),0],:,0#,!^F,o,O,e
+ 	set cink=0{,0},0),0],:,0#,!^F,o,O,e
 
 # cinwords	list of words that cause more C-indent
 # 	(local to buffer)
 #  	set cinw=if,else,while,do,for,switch
- 	set cinw+=loop
+ 	set cinw=if,else,while,do,for,switch,loop
 
 # cinscopedecls	list of scope declaration names used by cino-g
 # 	(local to buffer)
-#  	set cinsd=public,protected,private
+ 	set cinsd=public,protected,private
 
 # indentexpr	expression used to obtain the indent of a line
 # 	(local to buffer)
@@ -1008,6 +1012,7 @@ vim9script
 
 # ttimeout	allow timing out halfway into a key code
 #  	set nottimeout	ttimeout
+ 	set ttimeout
 
 # timeoutlen	time in msec for 'timeout'
 #  	set tm=1000

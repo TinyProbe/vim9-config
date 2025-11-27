@@ -20,7 +20,7 @@ def g:SelectAll(): void
 enddef
 
 # move line
-    # line(block) indent/outdent
+# line(block) indent/outdent
 def g:LineIndent(): void
     normal! >>
 enddef
@@ -38,7 +38,7 @@ def g:BlockOutdent(): void
     g:LineOutdent()
     normal! gv
 enddef
-    # line(block) up/down
+# line(block) up/down
 def g:LineUp()
     if line(".") != 1
         execute ":move .-2"
@@ -54,7 +54,7 @@ enddef
 def g:BlockUp()
     normal! :
     if line("'<") != 1
-    execute ":'<,'>move -2"
+        execute ":'<,'>move -2"
     endif
     normal! gv
 enddef
