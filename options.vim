@@ -317,6 +317,7 @@ vim9script
 
 # termguicolors	use GUI colors for the terminal
 #  	set notgc	tgc
+ 	set tgc
 
 # cursorcolumn	highlight the screen column of the cursor
 # 	(local to window)
