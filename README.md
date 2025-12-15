@@ -10,8 +10,7 @@
 관리자 vim-plug를 설치합니다.
 
 ⚠️ 경고: 기존 설정 백업
-
-설치를 진행하기 전에 기존 Vim/Neovim 설정이 있다면 반드시 백업하십시오.
+설치를 진행하기 전에 기존 ~/.config/vim 설정이 있다면 반드시 백업하십시오.
 스크립트는 충돌을 피하기 위해 기존 경로를 제거합니다.
 
 ```bash
@@ -45,8 +44,8 @@ echo "Installation complete. Please run 'vim' and then ':PlugInstall' to finaliz
 설치 스크립트를 실행한 후, Vim을 실행하고 다음 명령을 입력하여 플러그인을
 설치해야 합니다.
 
-1. vim 실행
-2. 명령 모드에서 :PlugInstall 입력
+- vim 실행
+- 명령 모드에서 :PlugInstall 입력
 
 ### 🧩 플러그인 수정 시 주의사항
 
@@ -58,7 +57,7 @@ plugins.vim 파일을 수정한 경우, Vim을 다시 시작하고 다음 명령
 :PlugClean
 ```
 
-## 💻 Customization
+### 💻 Customization
 
 사용자의 환경과 선호도에 맞춰 다음 파일들을 수정하여 이 설정을 개인화할 수
 있습니다.
