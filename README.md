@@ -1,4 +1,4 @@
-# ⚙️ vim-config
+# ⚙️ vim9-config
 
 <p align="center">
 개발 및 생산성을 최적화하도록 구성된 개인 Vim 설정 파일 모음입니다.
@@ -6,7 +6,7 @@
 
 ## 🚀 Installation
 
-이 스크립트는 기존 설정을 백업하고, vim-config 저장소를 클론하며, 플러그인
+이 스크립트는 기존 설정을 백업하고, vim9-config 저장소를 클론하며, 플러그인
 관리자 vim-plug를 설치합니다.
 
 ⚠️ 경고: 설치를 진행하기 전에 기존 ~/.config/vim 설정이 있다면 반드시
@@ -22,8 +22,8 @@ if [ -d "~/.config/vim" ]; then
 fi
 
 # 2. 저장소 클론 및 심볼릭 링크 설정
-echo "Cloning vim-config repository..."
-git clone https://github.com/TinyProbe/vim-config ~/.config/vim
+echo "Cloning vim9-config repository..."
+git clone https://github.com/TinyProbe/vim9-config ~/.config/vim
 
 # 3. .vimrc 파일 설정
 # init.vim 파일을 메인 설정 파일로 사용하도록 ~/.vimrc에 소스 지정
@@ -33,7 +33,7 @@ echo "source ~/.config/vim/init.vim" > ~/.vimrc
 # 4. vim-plug 설치
 echo "Installing vim-plug..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo "Installation complete. Please run 'vim' and then ':PlugInstall' to finalize plugin setup."
 ```
